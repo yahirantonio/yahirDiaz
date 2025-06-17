@@ -1,0 +1,80 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/miLogo.png";
+import { Icon } from "astro-icon/components";
+import Alink from "./Alink.astro";
+---
+
+<header class="sticky top-0 sm:pl-5 border-b-1 py-4">
+	<nav class="flex" id="navbar">
+		<Image src={logo} alt="Logo" class="w-10 sm:w-10 lg:w-13 object-contain hidden sm:block" />
+		<div
+			class="flex items-center sm:ml-12 justify-evenly w-full md:w-4/8 xl:max-w-118 gap-0 md:gap-5 xl:gap-9"
+		>
+			<Alink href="#Inicio" text="Inicio" />
+			<Alink href="#SobreMi" text="Sobre mí" />
+			<Alink href="#Proyectos" text="Proyectos" />
+			<Alink href="#Experiencia" text="Experiencia" />
+		</div>
+
+		<div
+			class="flex items-center pr-0 md:pr-0 w-fit md:w-3/12  md:justify-evenly ml-auto"
+		>
+			<a
+				href="https://www.linkedin.com/in/yahirdz/"
+				class="dark:text-white text-[#0A66C2] dark:hover:text-gray-600 hover:text-[#084b9a] transition hover:scale-115 text-5xl
+				hidden md:block"
+				target="_blank"
+			>
+				<Icon name="mdi--linkedin" />
+			</a>
+			<a
+				href="https://www.facebook.com/profile.php?id=61568444956143&locale=es_LA"
+				class="dark:text-white text-[#1877F2] dark:hover:text-gray-600 hover:text-[#145dbf] transition hover:scale-115 text-5xl
+				hidden lg:block"
+				target="_blank"
+			>
+				<Icon name="ic--baseline-facebook" />
+			</a>
+			<button
+				class="dark:text-white text-[#111] hover:text-gray-600 cursor-pointer text-4xl md:text-5xl"
+				id="theme-toggle"
+			>
+				<Icon
+					name="ic--baseline-dark-mode"
+					class="transition hover:scale-115"
+					id="darkIcon"
+				/>
+				<Icon
+					name="material-symbols--light-mode-outline-rounded"
+					class="hidden transition hover:scale-115"
+					id="lightIcon"
+				/>
+			</button>
+		</div>
+	</nav>
+</header>
+
+<script>
+	const themeToggle = document.getElementById("theme-toggle");
+
+	const toggleDark = () => {
+		const body = document.body;
+		body.classList.toggle("dark");
+
+		if (!themeToggle) return;
+		const darkIcon = themeToggle.querySelector("#darkIcon");
+		const lightIcon = themeToggle.querySelector("#lightIcon");
+		if (body.classList.contains("dark")) {
+			darkIcon?.classList.remove("hidden");
+			lightIcon?.classList.add("hidden");
+			localStorage.setItem("theme", "dark");
+		} else {
+			darkIcon?.classList.add("hidden");
+			lightIcon?.classList.remove("hidden");
+			localStorage.setItem("theme", "light");
+		}
+	};
+
+	themeToggle?.addEventListener("click", toggleDark);
+</script>
