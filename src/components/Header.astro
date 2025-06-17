@@ -9,7 +9,7 @@ import Alink from "./Alink.astro";
 	<nav class="flex" id="navbar">
 		<Image src={logo} alt="Logo" class="w-10 sm:w-10 lg:w-13 object-contain hidden sm:block" />
 		<div
-			class="flex items-center sm:ml-12 justify-evenly w-full md:w-4/8 xl:max-w-118 gap-0 md:gap-5 xl:gap-9"
+			class="flex items-center ml-0 md:ml-18 justify-around w-full md:w-4/8 xl:max-w-112 gap-0 md:gap-5 xl:gap-9"
 		>
 			<Alink href="#Inicio" text="Inicio" />
 			<Alink href="#SobreMi" text="Sobre mí" />
@@ -18,7 +18,7 @@ import Alink from "./Alink.astro";
 		</div>
 
 		<div
-			class="flex items-center pr-0 md:pr-0 w-fit md:w-3/12  md:justify-evenly ml-auto"
+			class="flex items-center w-fit md:w-3/12 sm:mr-7 md:mr-0 justify-around ml-auto"
 		>
 			<a
 				href="https://www.linkedin.com/in/yahirdz/"
@@ -37,7 +37,7 @@ import Alink from "./Alink.astro";
 				<Icon name="ic--baseline-facebook" />
 			</a>
 			<button
-				class="dark:text-white text-[#111] hover:text-gray-600 cursor-pointer text-4xl md:text-5xl"
+				class="dark:text-white text-[#111] hover:text-gray-600 cursor-pointer text-3xl md:text-5xl"
 				id="theme-toggle"
 			>
 				<Icon
