@@ -1,8 +1,9 @@
 ---
 const {
   href = '',
-  text = ''
+  text = '',
+  classes = ''
 } = Astro.props;
 ---
 
-<a href={href} class="dark:text-white dark:hover:text-gray-400 hover:text-slate-400 text-sm sm:text-md md:text-lg">{text}</a>
+<a href={href} class={"dark:text-white dark:hover:text-gray-400 hover:text-slate-400 text-sm sm:text-md md:text-lg " + classes}>{text}</a>
