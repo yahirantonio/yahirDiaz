@@ -5,7 +5,7 @@ import { Icon } from "astro-icon/components";
 import Alink from "./Alink.astro";
 ---
 
-<header class="sticky top-0 border-b-1 py-2 sm:py-4 dark:bg-black bg-white/30 backdrop-blur-md">
+<header class=" sticky top-0 border-b-1 py-2 sm:py-4 dark:bg-black bg-white/30 backdrop-blur-md">
 	<nav class="flex justify-between gap-5" id="navbar">
 		<Image
 			src={logo}
@@ -14,7 +14,7 @@ import Alink from "./Alink.astro";
 		/>
 		
 		<div
-			class="flex flex-row items-center justify-evenly gap-5 w-4/6 md:w-4/8 lg:w-6/10 xl:w-4/12 min-w-fit text-center"
+			class="flex flex-row items-center justify-around gap-5 w-4/6 md:w-4/8 lg:w-4/10 xl:w-4/12 min-w-fit text-center"
 		>
 			<Alink href="#Inicio" text="Inicio" />
 			<Alink href="#SobreMi" text="Sobre mí" / />
@@ -23,7 +23,7 @@ import Alink from "./Alink.astro";
 		</div>
 
 		<div
-			class="flex items-center mr-0 sm:mr-5 sm:1/6 min-w-fit gap-5 justify-around "
+			class="flex items-center sm:w-2/12 min-w-fit justify-around"
 		>
 			<a
 				href="https://www.linkedin.com/in/yahirdz/"
