@@ -1,0 +1,45 @@
+---
+import { Icon } from "astro-icon/components";
+import meAbout from "../assets/sobreMi.jpeg";
+import Image from "astro/components/Image.astro";
+---
+
+<section class="mt-16" id="sobre-mi">
+  <div class="flex flex-wrap justify-evenly items-center gap-4">
+    <div class="w-full md:max-w-4/10">
+      <div class="flex items-center gap-2 mb-4">
+        <Icon
+          name="material-symbols--person-rounded"
+          class="text-5xl text-[#111] dark:text-white mb-2"
+        />
+        <h1>Sobre mí</h1>
+      </div>
+      <p class="mb-4">
+        Me llamo Yahir Díaz. Mis primeros pasos en la programación comenzaron en
+        la preparatoria técnica, cuando tenía 15 años. Actualmente trabajo como
+        freelancer ayudando a empresas que quieren dar el salto hacia la web.
+      </p>
+
+      <p class="mb-4">
+        Entre mis logros destaca haber trabajado en un equipo multidisciplinario
+        de una empresa hotelera, donde desarrollé varios programas para la
+        gestión de clientes. Esta experiencia me permitió adquirir habilidades
+        valiosas en el ámbito laboral.
+      </p>
+
+      <p class="mb-4">
+        Uno de mis proyectos personales consiste en desarrollar sistemas que
+        faciliten la facturación en línea. Los impuestos son una responsabilidad
+        presente en la vida de todas las personas, sin importar el país. Por
+        eso, creo que es mejor entenderlos y tenerlos en cuenta desde el
+        principio, para evitar problemas con las autoridades fiscales en el
+        futuro.
+      </p>
+    </div>
+    <Image
+      src={meAbout}
+      alt="Imagen sobre mi persona con ropa informal"
+      class="max-w-xs object-contain rounded-lg"
+    />
+  </div>
+</section>

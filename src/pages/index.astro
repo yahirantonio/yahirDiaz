@@ -1,11 +1,19 @@
 ---
+import About from '../components/About.astro';
+import Experiencie from '../components/Experiencie.astro';
 import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
 import LayoutGuid from '../components/LayoutGuid.astro';
 import Main from '../Main.astro';
 import "../styles/global.css";
 ---
 
 <Main>
-	<!-- <LayoutGuid /> -->
 	<Header />
+	<main class="lg:w-10/12 mx-auto">
+		<Hero />
+		<LayoutGuid />
+		<About />
+		<Experiencie />
+	</main>
 </Main>

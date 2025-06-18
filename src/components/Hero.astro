@@ -1,0 +1,29 @@
+---
+import Image from "astro/components/Image.astro";
+import yo from "../assets/yo.png";
+import ButtonIcon from "./ButtonIcon.astro";
+---
+
+<section class="mb-36" id="Inicio">
+  <div class="flex flex-wrap justify-evenly items-center gap-4 mt-16">
+    <div class="w-full md:w-4/10">
+      <h1>Saludos, soy Yahir Díaz</h1>
+      <h2 class="text-2xl color-white">Desarrollador Web Full Stack</h2>
+      <p class="mt-4">
+        🚀 +1 año de experiencia en soporte y desarrollo de un sistema web ERP,
+        bajo la metodología de SCRUM.
+        <span class="text-[#FF7E7E]"
+          >He creado APIs , módulos responsive y módulo de reservas por fechas</span
+        >, usando tecnologías como Vue, C#, SQL Server y Bootstrap.
+      </p>
+      <div class="flex justify-center md:justify-start flex-wrap gap-4 mt-4 w-full">
+        <ButtonIcon
+          icon="material-symbols--attach-email-outline"
+          text="Contáctame por correo"
+        />
+        <ButtonIcon icon="mdi--linkedin" text="Hablame por Linkedin" />
+      </div>
+    </div>
+    <Image src={yo} alt="Foto de perfil" class="rounded-lg" />
+  </div>
+</section>

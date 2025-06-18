@@ -1,0 +1,12 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { text = "", icon = "" } = Astro.props;
+---
+
+<button
+  class="flex gap-2 items-center dark:border-white border dark:text-white px-2 py-2 rounded-md cursor-pointer"
+>
+  <Icon name={icon} class="text-2xl"/>
+  {text}
+</button>
