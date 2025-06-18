@@ -4,9 +4,9 @@ import meAbout from "../assets/sobreMi.jpeg";
 import Image from "astro/components/Image.astro";
 ---
 
-<section class="mt-16" id="sobre-mi">
-  <div class="flex flex-wrap justify-evenly items-center gap-4">
-    <div class="w-full md:max-w-4/10">
+<section class="mt-16 spacing-sections" id="sobre-mi">
+  <div class="flex flex-wrap justify-between items-center gap-4">
+    <div class="w-full md:max-w-1/2">
       <div class="flex items-center gap-2 mb-4">
         <Icon
           name="material-symbols--person-rounded"
@@ -39,7 +39,7 @@ import Image from "astro/components/Image.astro";
     <Image
       src={meAbout}
       alt="Imagen sobre mi persona con ropa informal"
-      class="max-w-xs object-contain rounded-lg"
+      class="max-w-3xs object-contain rounded-lg mx-auto sm:mx-0"
     />
   </div>
 </section>

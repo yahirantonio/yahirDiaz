@@ -9,3 +9,7 @@ h1 {
 p {
   @apply dark:text-[#B0B0B0]
 }
+
+.spacing-sections {
+  @apply mx-auto w-full sm:max-w-4/6 md:max-w-full lg:max-w-full xl:max-w-full 2xl:max-w-8/10
+}
