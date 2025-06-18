@@ -1,0 +1,57 @@
+---
+import { Icon } from "astro-icon/components";
+import ButtonIcon from "./ButtonIcon.astro";
+---
+
+<section class="mt-16 spacing-sections" id="experiencia-laboral">
+  <div class="flex flex-wrap items-center mb-4 gap-4 justify-between">
+    <div class="flex items-center gap-4">
+      <Icon
+        name="zondicons--portfolio"
+        class="text-4xl text-[#111] dark:text-white mb-2"
+      />
+      <h1>Experiencia Laboral</h1>
+    </div>
+    <ButtonIcon
+      link="https://drive.google.com/file/d/1wFZpmaHvNQ2JtT5BUV8JqSU2CjF8_XSq/view?usp=sharing"
+      icon="grommet-icons--document-download"
+      text="Descargar curriculum"
+    />
+  </div>
+  <div>
+    <div class="flex gap-4">
+      <div class="flex flex-col items-center">
+        <div class="bg-[#AF5858] rounded-full w-5 h-6"></div>
+        <div class="bg-[#AF5858]/50 w-1 h-full"></div>
+      </div>
+      <div class="pb-5">
+        <h2 class="text-2xl">Desarrollador web FullStack - Villa del palmar</h2>
+        <h3 class="text-[#5BABB1] text-xl font-semibold">
+          Enero 2023 - Actualidad
+        </h3>
+        <ul
+          class="dark:text-[#B0B0B0] list-disc list-inside mt-2 [&>li]:mb-0.5"
+        >
+          <li>
+            Creación de API CRUD de reservaciones, solo backend a través de C#
+            con LinQ y SQL Server.
+          </li>
+          <li>
+            Creación de módulo de registro e historial de reservación con diseño
+            para dispositivos móviles en vue 3, C# y SQL Server con Bootstrap.
+          </li>
+          <li>Desarrollo de plantillas de correo en html y css.</li>
+          <li>
+            Desarrollo de módulo de reservas con control de disponibilidad por
+            rangos de fechas bajo el esquema (MVC) en C#, con Asp.Net y SQL
+            Server.
+          </li>
+          <li>
+            Corrección de bugs y soporte a módulos tipo; facturación, reportes,
+            registro de clientes, historial de ventas.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

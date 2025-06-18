@@ -1,0 +1,21 @@
+---
+import Image from "astro/components/Image.astro";
+import ButtonIcon from "./ButtonIcon.astro";
+
+const { title, description, githubLink="", previewLink="", image } = Astro.props;
+---
+
+<article class="flex flex-col w-full max-w-md p-4 dark:bg-gray-800 bg-white rounded-lg shadow-md h-[550px]">
+  <Image src={image} alt="Card Image" class="rounded-lg max-w-full mb-4" />
+  <div class="grow">
+    <h2 class="dark:text-white text-2xl mb-2">{title}</h2>
+    <p>{description}</p>
+    <div class="flex flex-wrap gap-2 mt-4">
+      <slot></slot>
+    </div>
+  </div>
+  <div class="flex justify-end items-end gap-3">
+    {githubLink && <ButtonIcon icon="qlementine-icons--github-16" text="Codigo" link={githubLink}/>}
+    {previewLink && <ButtonIcon icon="material-symbols--preview" text="Visualizar" link={previewLink}/>}
+  </div>
+</article>

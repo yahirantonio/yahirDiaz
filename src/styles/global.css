@@ -13,3 +13,7 @@ p {
 .spacing-sections {
   @apply mx-auto w-full sm:max-w-4/6 md:max-w-full lg:max-w-full xl:max-w-full 2xl:max-w-8/10
 }
+
+.primary-button {
+  @apply dark:border-white border dark:text-white px-2 py-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all
+}

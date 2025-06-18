@@ -1,0 +1,97 @@
+---
+import { Icon } from "astro-icon/components";
+import Card from "./Card.astro";
+import NoteAppLaptop from "../assets/noteAppLaptop.webp";
+import onePageLaptop from "../assets/onePageLaptop.webp";
+import facturivaLaptop from "../assets/facturivaLaptop.webp";
+---
+
+<section class="mt-16 spacing-sections" id="proyectos">
+  <div class="flex items-center gap-4">
+    <Icon
+      name="material-symbols-light--ad-group-rounded"
+      class="text-4xl text-[#111] dark:text-white mb-2"
+    />
+    <h1>Proyectos Personales</h1>
+  </div>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 items-center justify-items-center gap-4"
+    id="card_container"
+  >
+    <Card
+      image={NoteAppLaptop}
+      title="Note App"
+      description="Aplicacion de notas que permite crear, editar y eliminar notas, con una interfaz amigable y responsive."
+      githubLink="https://github.com/yahirantonio/fastNote"
+      previewLink="https://fast-note-zeta.vercel.app/"
+    >
+      <img
+        src="https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white"
+        alt="Svelte"
+      />
+      <img
+        src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+        alt="JavaScript"
+      />
+      <img
+        src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+        alt="HTML"
+      />
+      <img
+        src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+        alt="CSS"
+      />
+    </Card>
+    <Card
+      image={onePageLaptop}
+      title="Landing Page"
+      description="Landing page desarrollada para vender un producto ficticio."
+      githubLink="https://github.com/yahirantonio/onePageLit"
+      previewLink="https://one-page-lit.vercel.app/"
+    >
+      <img
+        src="https://img.shields.io/badge/Lit-324FFF?style=for-the-badge&logo=lit&logoColor=white"
+        alt="Lit"
+      />
+      <img
+        src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+        alt="JavaScript"
+      />
+      <img
+        src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+        alt="HTML"
+      />
+      <img
+        src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+        alt="CSS"
+      />
+    </Card>
+    <Card
+      image={facturivaLaptop}
+      title="Facturiva"
+      description="sistema de facturación en línea desarrollado para facilitar la facturación de productos y servicios."
+      previewLink="https://invoice-lake-six.vercel.app/"
+    >
+      <img
+        src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
+        alt="TypeScript"
+      />
+      <img
+        src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"
+        alt="React"
+      />
+      <img
+        src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+        alt="JavaScript"
+      />
+      <img
+        src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+        alt="HTML"
+      />
+      <img
+        src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+        alt="CSS"
+      />
+    </Card>
+  </div>
+</section>
