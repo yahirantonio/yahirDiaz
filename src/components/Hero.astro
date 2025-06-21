@@ -4,18 +4,19 @@ import yo from "../assets/yo.png";
 import ButtonIcon from "./ButtonIcon.astro";
 ---
 
-<section class=" spacing-sections" id="Inicio">
+<section class="spacing-sections" id="Inicio">
   <div class="flex flex-wrap justify-between items-center gap-4 mt-16">
     <div class="w-full md:max-w-1/2">
       <h1>Saludos, soy Yahir Díaz</h1>
       <h2 class="text-2xl color-white">Desarrollador Web Full Stack</h2>
-      <p class="mt-4">
-        🚀 +1 año de experiencia en soporte y desarrollo de un sistema web ERP,
-        bajo la metodología de SCRUM.
-        <span class="text-[#FF7E7E]"
-          >He creado APIs , módulos responsive y módulo de reservas por fechas</span
-        >, usando tecnologías como Vue, C#, SQL Server y Bootstrap.
+      <p class="mt-4 mb-4">
+        👨‍💻 Con más de un año creando soluciones web para empresas, he trabajado
+        en equipo <span class="text-[#1FAA6F]"
+          >desarrollando páginas adaptables, APIs y sistemas de reservación.</span
+        > Ayudo a negocios a mejorar su presencia online creando páginas web rápidas,
+        claras y profesionales.
       </p>
+
       <div
         class="flex justify-center md:justify-start flex-wrap gap-4 mt-4 w-full"
       >
@@ -24,13 +25,17 @@ import ButtonIcon from "./ButtonIcon.astro";
           icon="material-symbols--attach-email-outline"
           text="Contáctame por correo"
         />
-        <ButtonIcon link="https://www.linkedin.com/in/yahirdz/" icon="mdi--linkedin" text="Hablame por Linkedin" />
+        <ButtonIcon
+          link="https://www.linkedin.com/in/yahirdz/"
+          icon="mdi--linkedin"
+          text="Hablame por Linkedin"
+        />
       </div>
     </div>
     <Image
       src={yo}
       alt="Foto de perfil"
-      class="rounded-lg max-w-3xs mx-auto md:mx-0 shadow-md object-contain"
+      class="rounded-lg max-w-3xs mx-auto md:mx-0 shadow-md object-contain opacity-0 animate-fadeIn"
     />
   </div>
 </section>

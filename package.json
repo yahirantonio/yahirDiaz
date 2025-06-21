@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.4.1",
+    "@fontsource/inter": "^5.2.6",
+    "@fontsource/montserrat": "^5.2.6",
     "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/vite": "^4.1.10",
     "astro": "^5.9.3",
