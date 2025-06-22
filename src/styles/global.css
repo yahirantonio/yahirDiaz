@@ -28,6 +28,15 @@ p {
   @apply dark:border-white border dark:text-white px-2 py-2 rounded-md cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 transition-all
 }
 
+.card-hover-effect {
+  @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-xl;
+}
+
+
+.animate-grow {
+  @apply transition-transform duration-300 ease-in-out hover:scale-105;
+}
+
 @layer utilities {
   @keyframes fadeIn {
     from { opacity: 0; }

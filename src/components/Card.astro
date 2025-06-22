@@ -5,7 +5,7 @@ import ButtonIcon from "./ButtonIcon.astro";
 const { title, description, githubLink="", previewLink="", image } = Astro.props;
 ---
 
-<article class="flex flex-col w-full max-w-md p-4 dark:bg-gray-800 bg-white rounded-lg shadow-md h-[550px]">
+<article class="flex flex-col w-full max-w-md p-4 dark:bg-gray-800 bg-white rounded-lg shadow-md h-[550px] card-hover-effect ">
   <Image src={image} alt="Card Image" class="rounded-lg max-w-full mb-4 h-64" />
   <div class="grow">
     <h2 class="dark:text-white text-2xl mb-2">{title}</h2>
